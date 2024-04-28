@@ -17,7 +17,7 @@ import Pin from './pin';
 
 import CITIES from './data/cities.json';
 
-const TOKEN = 'pk.eyJ1IjoibW91cmFqdW5pb3IxOSIsImEiOiJjbHZqbTlqajAwaG14MmlscTJpa3FrOTZsIn0.EjjK5PBEYxSEtviQVOJrOA';
+const TOKEN = process.REACT_APP_MAPBOX
 
 export default function App() {
   const myStorage = window.localStorage;
