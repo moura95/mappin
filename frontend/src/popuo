@@ -1,0 +1,27 @@
+{popupInfo && (
+          <Popup
+            anchor="top"
+            longitude={Number(popupInfo.longitude)}
+            latitude={Number(popupInfo.latitude)}
+            onClose={() => setPopupInfo(null)}
+          >
+            <div className='card'>
+              {/* {popupInfo.city}- {popupInfo.state} |{' '} */}
+              <label>Lugar</label>
+              <h4 className='place'>Tower Eiffel</h4>
+              <label>Review</label>
+              <p className='desc'>Beautiful place</p>
+              <label>Rating</label>
+              <div className='stars'></div>
+              <Star className='star'></Star >
+              <Star className='star'></Star >
+              <Star className='star'></Star >
+              <Star className='star'></Star >
+              <Star className='star'></Star>
+              <label>Descriptions</label>
+              <span className='username'> Created By <b>Moura</b> </span>
+              <span className='date'> 1 hour ago </span>
+            </div>
+            <img width="100%" src={popupInfo.image} />
+          </Popup>
+        )}
